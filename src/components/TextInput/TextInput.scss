@@ -1,0 +1,136 @@
+/* ----------------------------------------------*\
+    Form Field
+\*---------------------------------------------- */
+
+.tsl-form-field {
+  position: relative;
+  margin-bottom: $spacing-stack-16;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+/* ----------------------------------------------*\
+      Form controls
+\*---------------------------------------------- */
+
+.tsl-form-input,
+%form-input {
+  @include type-body-small;
+  width: 100%;
+  border: $border-default;
+  border-radius: $border-radius-small;
+  background-color: $color-background-primary;
+  background-image: none;
+  box-shadow: $box-shadow-inset;
+
+  &::placeholder {
+    color: $color-foreground-primary;
+  }
+
+  // fixes hidden focus ring on mac firefox
+  &:focus {
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+  }
+
+  &:disabled {
+    opacity: $opacity-disabled;
+    pointer-events: none;
+  }
+
+  .tsl-form-field--error & {
+    border-color: $color-tint-red-primary;
+  }
+
+  .tsl-form-field--success & {
+    border-color: $color-tint-green-primary;
+  }
+}
+
+.tsl-form-state-icon {
+  position: absolute;
+  top: 34px;
+  left: 8px;
+  width: 16px;
+  height: 16px;
+  padding: 3px;
+  border-radius: $border-radius-round;
+
+  &--error {
+    background-color: $color-tint-red-primary;
+    fill: $color-foreground-on-tint;
+  }
+
+  &--success {
+    background-color: $color-tint-green-primary;
+    fill: $color-foreground-on-tint;
+  }
+}
+
+.tsl-form-input--large {
+  @include spacing-inset-16;
+
+  .tsl-form-field--error &,
+  .tsl-form-field--success & {
+    padding-left: 38px;
+  }
+
+  + .tsl-form-state-icon {
+    top: 42px;
+    left: 12px;
+  }
+}
+
+.tsl-form-input--medium {
+  @include spacing-inset-8;
+
+  .tsl-form-field--error &,
+  .tsl-form-field--success & {
+    padding-left: $spacing-inline-32;
+  }
+}
+
+.tsl-form-input--small {
+  @include spacing-squish-4-8;
+  @include type-body-xsmall;
+
+  .tsl-form-field--error &,
+  .tsl-form-field--success & {
+    padding-left: 28px;
+  }
+
+  + .tsl-form-state-icon {
+    top: 30px;
+    width: 14px;
+    height: 14px;
+  }
+}
+
+/* ----------------------------------------------*\
+      Textarea
+\*---------------------------------------------- */
+
+.tsl-form-input--textarea {
+  @include spacing-inset-8;
+  min-height: 64px;
+  resize: none;
+}
+
+
+/* ----------------------------------------------*\
+      Form labels, legends, messages
+\*---------------------------------------------- */
+
+.tsl-form-label {
+  @include type-body-small;
+  @include type-style-bold;
+  position: relative;
+  display: block;
+  margin-bottom: $spacing-stack-8;
+}
+
+.tsl-form-input-message {
+  @include type-body-xsmall($color-tint-red-primary);
+  margin-top: $spacing-stack-4;
+}

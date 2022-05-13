@@ -1,0 +1,18 @@
+.tsl-doc-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: $documentation-padding;
+  padding-left: $documentation-padding;
+
+  &--centered {
+    justify-content: center;
+  }
+
+  .tsl-doc-card-content {
+    display: block;
+    width: 100%;
+    height: 100px;
+  }
+}

@@ -1,0 +1,72 @@
+/* START: Storybook specific styles */
+$documentation-black: #000;
+$documentation-white: #fff;
+$documentation-gray: #efefef;
+$documentation-pink: #fb0091;
+$documentation-padding: 20px;
+
+body {
+  padding: $documentation-padding;
+}
+
+.tsl-doc-grid {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: $documentation-padding;
+  width: 100%;
+
+  &-item {
+    padding-top: $documentation-padding;
+    border: 1px solid $documentation-gray;
+  }
+
+  &--list {
+    display: flex;
+    flex-direction: column;
+
+    > .tsl-doc-grid-item {
+      flex: 0 0 auto;
+      margin-bottom: $documentation-padding;
+    }
+  }
+
+  &--feature {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+
+    .tsl-doc-grid {
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+    }
+  }
+}
+
+.tsl-doc-footer {
+  display: flex;
+  flex-flow: column wrap;
+  justify-self: flex-end;
+  width: 100%;
+  margin-top: $documentation-padding;
+  padding: 10px;
+  border-top: 1px solid $documentation-gray;
+  background: rgba($documentation-white, 0.8);
+  font-size: 12px;
+
+  p {
+    overflow: auto;
+    margin: 0 0 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+@import "./Colors/Colors";
+@import "./Spacing/Spacing";
+@import "./Typography/Typography";
+@import "./Cards/Cards";
+
+/* END: Storybook specific styles */

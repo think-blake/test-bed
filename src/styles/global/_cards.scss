@@ -1,0 +1,23 @@
+.tsl-card-container--border {
+  @include card-container-border;
+}
+
+.tsl-card-container--shadow {
+  @include card-container-shadow;
+}
+
+.tsl-card-communication--neutral {
+  @include card-communication-neutral;
+}
+
+.tsl-card-communication--success {
+  @include card-communication-success;
+}
+
+.tsl-card-communication--warning {
+  @include card-communication-warning;
+}
+
+.tsl-card-communication--error {
+  @include card-communication-error;
+}

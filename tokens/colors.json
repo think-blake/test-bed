@@ -1,0 +1,93 @@
+[
+  {
+    "name": "blue",
+    "section": "tint",
+    "variants": [
+      {
+        "name": "primary",
+        "color": "#4640ed"
+      },
+      {
+        "name": "secondary",
+        "color": "#ededfa"
+      }
+    ]
+  },
+  {
+    "name": "green",
+    "section": "tint",
+    "variants": [
+      {
+        "name": "primary",
+        "color": "#77d59d"
+      },
+      {
+        "name": "secondary",
+        "color": "#e4f6eb"
+      }
+    ]
+  },
+  {
+    "name": "red",
+    "section": "tint",
+    "variants": [
+      {
+        "name": "primary",
+        "color": "#d5403c"
+      },
+      {
+        "name": "secondary",
+        "color": "#fbe3e2"
+      }
+    ]
+  },
+  {
+    "name": "orange",
+    "section": "tint",
+    "variants": [
+      {
+        "name": "primary",
+        "color": "#ffaf62"
+      },
+      {
+        "name": "secondary",
+        "color": "#faecde"
+      }
+    ]
+  },
+  {
+    "name": "primary",
+    "section": "background",
+    "color": "#ffffff"
+  },
+  {
+    "name": "secondary",
+    "section": "background",
+    "color": "#eeeff3"
+  },
+  {
+    "name": "tertiary",
+    "section": "background",
+    "color": "#dee0e8"
+  },
+  {
+    "name": "primary",
+    "section": "foreground",
+    "color": "#333333"
+  },
+  {
+    "name": "secondary",
+    "section": "foreground",
+    "color": "#666666"
+  },
+  {
+    "name": "tertiary",
+    "section": "foreground",
+    "color": "#939ab4"
+  },
+  {
+    "name": "on-tint",
+    "section": "foreground",
+    "color": "#ffffff"
+  }
+]

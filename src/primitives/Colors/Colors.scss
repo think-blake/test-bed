@@ -1,0 +1,33 @@
+.tsl-doc-color {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  padding-top: 0;
+
+  .tsl-doc-footer {
+    margin-top: 0;
+  }
+
+  &-block {
+    min-height: 150px;
+  }
+
+  .tsl-doc-text {
+    display: flex;
+    justify-content: center;
+    font-size: 64px;
+    text-align: center;
+  }
+}
+
+.tsl-doc-a11y-tag-container {
+  white-space: nowrap;
+}
+
+.tsl-doc-a11y-tag {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 5px;
+  background: rgba($documentation-black, 0.65);
+  color: $documentation-white;
+}

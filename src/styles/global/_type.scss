@@ -1,0 +1,45 @@
+.tsl-type-display {
+  &--large {
+    @include type-display-large;
+  }
+
+  &--medium {
+    @include type-display-medium;
+  }
+
+  &--small {
+    @include type-display-small;
+  }
+}
+
+.tsl-type-body {
+  &--medium {
+    @include type-body-default;
+  }
+
+  &--small {
+    @include type-body-small;
+  }
+
+  &--xsmall {
+    @include type-body-xsmall;
+  }
+
+  &--tiny {
+    @include type-body-tiny;
+  }
+}
+
+.tsl-type-accessible {
+  @extend %accessibly-hidden;
+}
+
+.tsl-type-style {
+  &--bold {
+    @include type-style-bold;
+  }
+
+  &--italic {
+    font-style: italic;
+  }
+}

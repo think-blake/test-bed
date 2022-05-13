@@ -1,0 +1,15 @@
+{
+  "radius": {
+    "sharp": "2px",
+    "small": "4px",
+    "large": "16px",
+    "round": "50%"
+  },
+  "shadow": {
+    "default": "2px 2px 2px 1px rgba(0, 0, 0, 0.2)",
+    "inset": "inset 0 1px 3px 0 rgba(0, 0, 0, 0.2)"
+  },
+  "border": {
+    "default": "1px solid $color-foreground-tertiary"
+  }
+}

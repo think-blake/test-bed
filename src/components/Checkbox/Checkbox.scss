@@ -1,0 +1,66 @@
+/* ----------------------------------------------*\
+      Checkbox
+\*---------------------------------------------- */
+
+.tsl-form-input-checkbox {
+  @extend %accessibly-hidden;
+
+  + .tsl-form-label {
+    margin-right: $spacing-inline-32;
+    padding-left: $spacing-inline-24;
+    line-height: 1.15; // Match height of pseudo-checkbox
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 14px;
+      height: 14px;
+      border: $border-default;
+      border-radius: $border-radius-sharp;
+      background: none;
+      box-shadow: $box-shadow-inset;
+    }
+  }
+
+  &:checked + .tsl-form-label,
+  &:indeterminate + .tsl-form-label {
+    &::before {
+      background-color: $color-tint-blue-primary;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='7'%3E%3Cpath fill='none' fill-rule='evenodd' stroke='%23FFF' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M1 3.35l2.82 2.83L9 1'/%3E%3C/svg%3E");
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &:indeterminate + .tsl-form-label {
+    &::before {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='3'%3E%3Cpath fill='none' fill-rule='evenodd' stroke='%23FFF' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M1 1L8.5 1'/%3E%3C/svg%3E");
+    }
+  }
+
+  &:focus + .tsl-form-label::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 18px;
+    height: 18px;
+    border: $border-default;
+    border-radius: $border-radius-sharp;
+  }
+
+  &[disabled] + .tsl-form-label,
+  &:disabled + .tsl-form-label {
+    opacity: $opacity-disabled;
+  }
+
+  .tsl-form-field--error & {
+    + .tsl-form-label {
+      &::before {
+        border-color: $color-tint-red-primary;
+      }
+    }
+  }
+}

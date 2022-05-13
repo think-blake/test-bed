@@ -1,0 +1,66 @@
+/* ----------------------------------------------*\
+      Radio Buttons
+\*---------------------------------------------- */
+
+.tsl-form-input-radio {
+  @extend %accessibly-hidden;
+
+  + .tsl-form-label {
+    margin-right: $spacing-inline-32;
+    padding-left: $spacing-inline-24;
+    line-height: 1.45; // Match pseudo-radio height
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      border: $border-default;
+      border-radius: $border-radius-round;
+      box-shadow: $box-shadow-inset;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 4px;
+      width: 10px;
+      height: 10px;
+      border-radius: $border-radius-round;
+      background-color: $color-tint-blue-primary;
+      opacity: 0;
+    }
+  }
+
+  &:checked + .tsl-form-label::after {
+    opacity: 1;
+  }
+
+  &:focus + .tsl-form-label {
+    &::before {
+      top: 0;
+      border-width: 2px;
+    }
+
+    &::after {
+      top: 5px;
+      left: 5px;
+    }
+  }
+
+  &[disabled] + .tsl-form-label,
+  &:disabled + .tsl-form-label {
+    opacity: $opacity-disabled;
+  }
+
+  .tsl-form-field--error & {
+    + .tsl-form-label {
+      &::before {
+        border-color: $color-tint-red-primary;
+      }
+    }
+  }
+}

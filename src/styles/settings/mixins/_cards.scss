@@ -1,0 +1,41 @@
+@mixin card-base {
+  @include spacing-inset-12;
+  width: 100%;
+  border-radius: $border-radius-small;
+}
+
+@mixin card-container-border {
+  @include card-base;
+  border: 1px solid rgb(222, 224, 232);
+  background: $color-background-primary;
+}
+
+@mixin card-container-shadow {
+  @include card-base;
+  border: 1px solid rgb(222, 224, 232);
+  box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.15);
+}
+
+@mixin card-communication-neutral {
+  @include card-base;
+  border: 0.5px solid $color-tint-blue-primary;
+  background: $color-tint-blue-secondary;
+}
+
+@mixin card-communication-success {
+  @include card-base;
+  border: 0.5px solid $color-tint-green-primary;
+  background: $color-tint-green-secondary;
+}
+
+@mixin card-communication-warning {
+  @include card-base;
+  border: 0.5px solid $color-tint-orange-primary;
+  background: $color-tint-orange-secondary;
+}
+
+@mixin card-communication-error {
+  @include card-base;
+  border: 0.5px solid $color-tint-red-primary;
+  background: $color-tint-red-secondary;
+}

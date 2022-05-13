@@ -1,0 +1,115 @@
+/* ----------------------------------------------*\
+    Buttons
+\*---------------------------------------------- */
+
+.tsl-btn {
+  @include button-base;
+
+  &--large {
+    @include spacing-squish-16-24;
+  }
+
+  &--medium {
+    @include spacing-squish-8-16;
+  }
+
+  &--small {
+    @include spacing-squish-4-8;
+    font-size: $font-size-12;
+
+    > svg {
+      width: 10px;
+      height: 10px;
+    }
+  }
+}
+
+/* ----------------------------------------------*\
+    Primary Button
+\*---------------------------------------------- */
+
+.tsl-btn--primary {
+  @include button-style-primary;
+}
+
+/* ----------------------------------------------*\
+    Secondary Button
+\*---------------------------------------------- */
+
+.tsl-btn--secondary {
+  @include button-style-secondary;
+}
+
+/* ----------------------------------------------*\
+    Danger Button
+\*---------------------------------------------- */
+
+.tsl-btn--danger {
+  @include button-style-danger;
+}
+
+/* ----------------------------------------------*\
+    Link Button
+\*---------------------------------------------- */
+
+.tsl-btn--link {
+  @include button-style-link;
+
+  &.tsl-btn--medium {
+    padding: 0 $spacing-inline-2;
+  }
+
+  &.tsl-btn--small {
+    padding: 0 $spacing-inline-2;
+    font-size: $font-size-14;
+  }
+
+  &.tsl-btn--xsmall {
+    padding: 0 $spacing-inline-2;
+    font-size: $font-size-12;
+  }
+
+  &.tsl-btn--tiny {
+    padding: 0 $spacing-inline-2;
+    font-size: $font-size-10;
+  }
+}
+
+/* ----------------------------------------------*\
+    Icon Button Variant
+\*---------------------------------------------- */
+
+.tsl-btn--icon,
+.tsl-btn--icon-text {
+  @include spacing-inset-8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: $border-radius-small;
+  line-height: 0;
+
+  &.tsl-btn--large {
+    @include spacing-inset-16;
+  }
+
+  &.tsl-btn--medium {
+    @include spacing-inset-12;
+  }
+
+  &.tsl-btn--small {
+    @include spacing-inset-8;
+  }
+}
+
+.tsl-btn--icon-text {
+  > svg {
+    margin-right: $spacing-inline-8;
+  }
+
+  &-reverse {
+    > svg {
+      margin-right: 0;
+      margin-left: $spacing-inline-8;
+    }
+  }
+}

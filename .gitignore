@@ -1,0 +1,11 @@
+.DS_*
+*.log*
+
+.eslintcache
+.vscode
+
+coverage/
+dist/
+node_modules/
+package/
+storybook-static/

@@ -1,0 +1,57 @@
+/* stylelint-disable property-disallowed-list */
+/* ----------------------------------------------*\
+     Compositional mixins
+\*---------------------------------------------- */
+
+// The base style for all fonts. Accepts an optional font color parameter
+@mixin type-base-style($font-color: $color-foreground-primary, $font-weight: $font-weight-400) {
+  color: $font-color;
+  font-weight: $font-weight;
+  font-size: $font-size-16;
+  font-family: $font-stack-sans;
+  line-height: 1.25;
+}
+
+/* ----------------------------------------------*\
+     Styling mixins
+\*---------------------------------------------- */
+@mixin type-style-bold {
+  font-weight: $font-weight-700;
+}
+
+/* ----------------------------------------------*\
+    Type mixins
+\*---------------------------------------------- */
+@mixin type-display-large($font-color: $color-foreground-primary) {
+  @include type-base-style($font-color, $font-weight-700);
+  font-size: $font-size-40;
+}
+
+@mixin type-display-medium($font-color: $color-foreground-primary) {
+  @include type-base-style($font-color, $font-weight-700);
+  font-size: $font-size-32;
+}
+
+@mixin type-display-small($font-color: $color-foreground-primary) {
+  @include type-base-style($font-color, $font-weight-700);
+  font-size: $font-size-24;
+}
+
+@mixin type-body-default($font-color: $color-foreground-primary) {
+  @include type-base-style($font-color);
+}
+
+@mixin type-body-small($font-color: $color-foreground-primary) {
+  @include type-base-style($font-color);
+  font-size: $font-size-14;
+}
+
+@mixin type-body-xsmall($font-color: $color-foreground-primary) {
+  @include type-base-style($font-color);
+  font-size: $font-size-12;
+}
+
+@mixin type-body-tiny($font-color: $color-foreground-primary) {
+  @include type-base-style($font-color);
+  font-size: $font-size-10;
+}

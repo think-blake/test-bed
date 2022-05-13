@@ -1,0 +1,9 @@
+{
+  "size": [10, 12, 14, 16, 24, 32, 40],
+  "weight": [300, 400, 700],
+  "stack": {
+    "system": "system, -apple-system, '.SFNSText-Regular', 'San Francisco', 'Roboto', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande', sans-serif",
+    "serif": "Constantia, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif",
+    "sans": "'Roboto', sans-serif"
+  }
+}

@@ -1,0 +1,42 @@
+.tsl-icon {
+  display: inline-block;
+
+  &--default {
+    fill: $color-foreground-primary;
+  }
+
+  &--white {
+    fill: $color-foreground-on-tint;
+  }
+
+  &--control {
+    fill: $color-foreground-tertiary;
+  }
+
+  &--primary {
+    fill: $color-tint-blue-primary;
+  }
+
+  &--error {
+    fill: $color-tint-red-primary;
+  }
+
+  &--success {
+    fill: $color-tint-green-primary;
+  }
+
+  &--large {
+    width: 20px;
+    height: 20px;
+  }
+
+  &--medium {
+    width: 14px;
+    height: 14px;
+  }
+
+  &--small {
+    width: 10px;
+    height: 10px;
+  }
+}

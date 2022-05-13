@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color-background-primary;
+
+  @include type-body-default;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 rem($spacing-stack-8) 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+svg {
+  max-width: 100%;
+}
+
+.tsl-accessibly-hidden,
+%accessibly-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+  white-space: nowrap;
+}

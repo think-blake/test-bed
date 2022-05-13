@@ -1,0 +1,12 @@
+*.json
+*.md
+
+.storybook/
+build/
+coverage/
+dist/
+node_modules/
+storybook-static/
+src/assets/
+src/styles/settings/
+tokens/

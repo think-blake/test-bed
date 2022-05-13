@@ -1,0 +1,41 @@
+/* ----------------------------------------------*\
+      Select
+\*---------------------------------------------- */
+
+.tsl-form-select {
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23939ab4' fill-rule='evenodd' viewBox='0 0 24 24'%3E%3Cpath d='M11.0673126,19.1021479 L0.386350391,8.10198065 C-0.128783464,7.57145453 -0.128783464,6.71133772 0.386350391,6.18086821 L1.63211366,4.89788139 C2.14636816,4.3682609 2.97982649,4.36724207 3.4952901,4.89561733 L12.0000275,13.6134412 L20.5047099,4.89561733 C21.0201735,4.36724207 21.8536318,4.3682609 22.3678863,4.89788139 L23.6136496,6.18086821 C24.1287835,6.71139433 24.1287835,7.57151113 23.6136496,8.10198065 L12.9327424,19.1021479 C12.4176085,19.6326174 11.5824464,19.6326174 11.0673126,19.1021479 Z' /%3E%3C/svg%3E");
+  background-position-x: calc(100% - 8px);
+  background-position-y: 50%;
+  background-size: 10px;
+  background-repeat: no-repeat;
+  box-shadow: none;
+
+  &--large {
+    background-position-x: calc(100% - 16px);
+    background-size: 16px;
+  }
+
+  &--medium {
+    background-position-x: calc(100% - 12px);
+    background-size: 14px;
+  }
+
+  &-element {
+    @extend %form-input;
+    background: transparent;
+    appearance: none;
+
+    .tsl-form-select--large & {
+      @include spacing-inset-16;
+    }
+
+    .tsl-form-select--medium & {
+      @include spacing-inset-8;
+    }
+
+    .tsl-form-select--small & {
+      @include spacing-squish-4-8;
+      @include type-body-xsmall;
+    }
+  }
+}

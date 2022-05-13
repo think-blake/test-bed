@@ -1,0 +1,17 @@
+
+const Template = args => {
+  return `<div class="tsl-{{ pascalCase name }}">
+    // code goes here
+  </div>`;
+};
+
+export const {{ pascalCase name }} = Template.bind({});
+
+export default {
+  title: 'Components / {{ titleCase name }}',
+  parameters: {
+    options: {
+      showPanel: false
+    }
+  }
+};
