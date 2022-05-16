@@ -9,6 +9,7 @@
 
 
 .tsl-Nav-list {
+  @include type-display-small;
   display: flex;
   justify-content: space-between;
   float: inline-start;
