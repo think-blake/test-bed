@@ -1,7 +1,7 @@
 // Main Component class
 .tsl-Nav {
   margin: 0;
-  padding: 4px;
+  padding: 15px;
 
 
   /* Default component styles */
@@ -23,7 +23,15 @@
 }
 
 .tsl-Nav-list-link {
-  text-transform: uppercase;
+  color: black;
   font-weight: lighter;
+  text-decoration: none;
+  text-transform: uppercase;
   text-decoration-color: black;
+}
+
+.tsl-Nav-list-link:hover {
+  @include type-display-medium;
+  color: blue;
+  text-decoration: underline;
 }
