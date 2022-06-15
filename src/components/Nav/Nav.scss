@@ -16,6 +16,10 @@
   float: inline-start;
   padding: 8px;
   padding-right: 2em;
+  border-width: 0.5em;
+  border-style: solid;
+  border-color: $color-tint-green-secondary;
+  border-radius: 1em;
   background-color: $color-tint-green-primary;
   list-style-type: none;
   text-decoration: none;
