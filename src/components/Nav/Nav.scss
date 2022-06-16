@@ -18,11 +18,14 @@
   padding-right: 2em;
   border-width: 0.5em;
   border-style: solid;
-  border-color: $color-tint-green-secondary;
-  border-radius: 1em;
   background-color: $color-tint-green-primary;
   list-style-type: none;
   text-decoration: none;
+}
+
+.tsl-Nav-list-link:hover {
+  border-color: $color-tint-green-secondary;
+  border-radius: 1em;
 }
 
 .tsl-Nav-list-item {
@@ -39,7 +42,6 @@
 
 .tsl-Nav-list-link:hover {
   color: blue;
-  text-decoration: underline;
 }
 
 .tsl-Nav-list-logo {
