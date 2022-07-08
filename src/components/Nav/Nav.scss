@@ -7,6 +7,15 @@
   /* Default component styles */
 }
 
+.tsl-Nav-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 30px;
+  background-color: yellow;
+}
+
 
 .tsl-Nav-list {
   @include type-display-small;
@@ -21,13 +30,13 @@
   text-decoration: none;
 }
 
-/* Adds border on hover
+/* Adds border on hover */
 .tsl-Nav-list:hover {
   border-width: 0.5em;
   border-style: solid;
   border-color: $color-tint-green-secondary;
 }
-*/
+
 
 .tsl-Nav-list-item {
   padding: 15px;
@@ -45,7 +54,6 @@
   color: blue;
 }
 
-.tsl-Nav-list-logo {
-  align-items: left;
-  justify-content: right;
+.tsl-brand-logo {
+
 }
