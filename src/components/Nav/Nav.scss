@@ -7,7 +7,9 @@
   /* Default component styles */
 }
 
-.tsl-Nav-wrapper {
+
+.tsl-Nav-wrapper,
+.tsl-brand-logo {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -30,12 +32,13 @@
   text-decoration: none;
 }
 
-/* Adds border on hover */
+/* Adds border on hover
 .tsl-Nav-list:hover {
   border-width: 0.5em;
   border-style: solid;
   border-color: $color-tint-green-secondary;
 }
+*/
 
 
 .tsl-Nav-list-item {
@@ -54,6 +57,3 @@
   color: blue;
 }
 
-.tsl-brand-logo {
-
-}
