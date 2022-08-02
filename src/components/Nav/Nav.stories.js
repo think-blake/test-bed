@@ -5,7 +5,7 @@ const Template = args => {
   <div class="tsl-Nav-logo-wrapper">
  <a class="tsl-brand-logo" href="#"><img src="https://i.gifer.com/o8G.gif" alt="a rock" style="width:42px;height:42px;"></a>
  </div>
- <nav class="tsl-Nav">
+ <nav>
   <ul class="tsl-Nav-list">
   <li class="tsl-Nav-list-logo">
     <li class="tsl-Nav-list-item"><a class="tsl-Nav-list-link" href="#">Home</a></li>
