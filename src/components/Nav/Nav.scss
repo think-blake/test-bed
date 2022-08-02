@@ -8,6 +8,56 @@
 }
 
 
-.tsl-Nav-list {
-  list-style-type: none;
+.tsl-Nav-wrapper, {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: $color-tint-green-primary;
 }
+
+.tsl-Nav-list-logo-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+}
+
+
+.tsl-Nav-list {
+  @include type-display-small;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  float: inline-start;
+  padding: 8px;
+  padding-right: 2em;
+  background-color: $color-tint-green-primary;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/* Adds border on hover
+.tsl-Nav-list:hover {
+  border-width: 0.5em;
+  border-style: solid;
+  border-color: $color-tint-green-secondary;
+}
+*/
+
+
+.tsl-Nav-list-item {
+  padding: 15px;
+}
+
+.tsl-Nav-list-link {
+  color: black;
+  font-weight: lighter;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-decoration-color: black;
+}
+
+.tsl-Nav-list-link:hover {
+  color: blue;
+}
+
